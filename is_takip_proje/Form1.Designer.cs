@@ -38,7 +38,7 @@ namespace is_takip_proje
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnPersonelListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
@@ -100,7 +100,7 @@ namespace is_takip_proje
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.barButtonItem7,
+            this.BtnPersonelListesi,
             this.barButtonItem8,
             this.barButtonItem9,
             this.barButtonItem10,
@@ -136,7 +136,7 @@ namespace is_takip_proje
             this.ribbonPage5,
             this.ribbonPage6,
             this.ribbonPage7});
-            this.ribbonControl1.Size = new System.Drawing.Size(1638, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1851, 183);
             // 
             // barButtonItem1
             // 
@@ -150,8 +150,8 @@ namespace is_takip_proje
             // 
             this.barButtonItem2.Caption = "Departman Listesi";
             this.barButtonItem2.Id = 2;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnDepartmanListesi.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnDepartmanListesi.ImageOptions.LargeImage")));
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
@@ -185,13 +185,14 @@ namespace is_takip_proje
             this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
             this.barButtonItem6.Name = "barButtonItem6";
             // 
-            // barButtonItem7
+            // BtnPersonelListesi
             // 
-            this.barButtonItem7.Caption = "Personel Listesi";
-            this.barButtonItem7.Id = 7;
-            this.barButtonItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.barButtonItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
-            this.barButtonItem7.Name = "barButtonItem7";
+            this.BtnPersonelListesi.Caption = "Personel Listesi";
+            this.BtnPersonelListesi.Id = 7;
+            this.BtnPersonelListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
+            this.BtnPersonelListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+            this.BtnPersonelListesi.Name = "BtnPersonelListesi";
+            this.BtnPersonelListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelListesi_ItemClick);
             // 
             // barButtonItem8
             // 
@@ -417,7 +418,7 @@ namespace is_takip_proje
             // 
             // ribbonPageGroup4
             // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup4.ItemLinks.Add(this.BtnPersonelListesi);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
@@ -516,7 +517,7 @@ namespace is_takip_proje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1638, 659);
+            this.ClientSize = new System.Drawing.Size(1851, 761);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "Form1";
@@ -539,7 +540,7 @@ namespace is_takip_proje
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem BtnPersonelListesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
