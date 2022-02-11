@@ -37,5 +37,12 @@ namespace is_takip_proje
             frm3.MdiParent = this;
             frm3.Show();
         }
+
+        private void BtnGorevListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGorevListesi frm4 = new Formlar.FrmGorevListesi();
+            frm4.MdiParent = this;
+            frm4.Show();
+        }
     }
 }
