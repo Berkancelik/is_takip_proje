@@ -40,7 +40,7 @@ namespace is_takip_proje
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnPersonelListesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnPersonelIstatistik = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
@@ -102,7 +102,7 @@ namespace is_takip_proje
             this.barButtonItem6,
             this.BtnPersonelListesi,
             this.barButtonItem8,
-            this.barButtonItem9,
+            this.BtnPersonelIstatistik,
             this.barButtonItem10,
             this.barButtonItem11,
             this.barButtonItem12,
@@ -136,7 +136,7 @@ namespace is_takip_proje
             this.ribbonPage5,
             this.ribbonPage6,
             this.ribbonPage7});
-            this.ribbonControl1.Size = new System.Drawing.Size(1851, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1856, 183);
             // 
             // barButtonItem1
             // 
@@ -202,13 +202,14 @@ namespace is_takip_proje
             this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
             this.barButtonItem8.Name = "barButtonItem8";
             // 
-            // barButtonItem9
+            // BtnPersonelIstatistik
             // 
-            this.barButtonItem9.Caption = "Personel İstatistikleri";
-            this.barButtonItem9.Id = 9;
-            this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.barButtonItem9.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
-            this.barButtonItem9.Name = "barButtonItem9";
+            this.BtnPersonelIstatistik.Caption = "Personel İstatistikleri";
+            this.BtnPersonelIstatistik.Id = 9;
+            this.BtnPersonelIstatistik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
+            this.BtnPersonelIstatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
+            this.BtnPersonelIstatistik.Name = "BtnPersonelIstatistik";
+            this.BtnPersonelIstatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelIstatistik_ItemClick);
             // 
             // barButtonItem10
             // 
@@ -424,7 +425,7 @@ namespace is_takip_proje
             // 
             // ribbonPageGroup5
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup5.ItemLinks.Add(this.BtnPersonelIstatistik);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             // 
             // ribbonPage4
@@ -517,7 +518,7 @@ namespace is_takip_proje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1851, 761);
+            this.ClientSize = new System.Drawing.Size(1856, 820);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "Form1";
@@ -542,7 +543,7 @@ namespace is_takip_proje
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem BtnPersonelListesi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem BtnPersonelIstatistik;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;

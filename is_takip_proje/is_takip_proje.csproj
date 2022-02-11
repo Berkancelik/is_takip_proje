@@ -109,6 +109,12 @@
     <Compile Include="Formlar\FrmDepartmanlar.Designer.cs">
       <DependentUpon>FrmDepartmanlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmPersonelIstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmPersonelIstatistik.Designer.cs">
+      <DependentUpon>FrmPersonelIstatistik.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmPersoneller.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmDepartmanlar.resx">
       <DependentUpon>FrmDepartmanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmPersonelIstatistik.resx">
+      <DependentUpon>FrmPersonelIstatistik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmPersoneller.resx">
       <DependentUpon>FrmPersoneller.cs</DependentUpon>

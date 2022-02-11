@@ -76,6 +76,7 @@ namespace is_takip_proje.Formlar
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // groupControl1
             // 
@@ -119,6 +120,7 @@ namespace is_takip_proje.Formlar
             this.BtnSil.Size = new System.Drawing.Size(186, 32);
             this.BtnSil.TabIndex = 12;
             this.BtnSil.Text = "Sil";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnGuncelle
             // 
@@ -128,6 +130,7 @@ namespace is_takip_proje.Formlar
             this.BtnGuncelle.Size = new System.Drawing.Size(186, 32);
             this.BtnGuncelle.TabIndex = 11;
             this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnListele
             // 
