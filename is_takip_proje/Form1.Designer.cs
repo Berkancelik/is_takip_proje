@@ -53,7 +53,7 @@ namespace is_takip_proje
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnGorevDetay = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
@@ -115,7 +115,7 @@ namespace is_takip_proje
             this.barButtonItem19,
             this.barButtonItem20,
             this.barButtonItem21,
-            this.barButtonItem22,
+            this.BtnGorevDetay,
             this.barButtonItem23,
             this.barButtonItem24,
             this.barButtonItem25,
@@ -272,8 +272,8 @@ namespace is_takip_proje
             // 
             this.BtnGorevTanimi.Caption = "Yeni Görev Tanımla";
             this.BtnGorevTanimi.Id = 18;
-            this.BtnGorevTanimi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.Image")));
-            this.BtnGorevTanimi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.LargeImage")));
+            this.BtnGorevTanimi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGorevTanimi.ImageOptions.Image")));
+            this.BtnGorevTanimi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGorevTanimi.ImageOptions.LargeImage")));
             this.BtnGorevTanimi.Name = "BtnGorevTanimi";
             this.BtnGorevTanimi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGorevTanimi_ItemClick);
             // 
@@ -301,13 +301,14 @@ namespace is_takip_proje
             this.barButtonItem21.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.ImageOptions.LargeImage")));
             this.barButtonItem21.Name = "barButtonItem21";
             // 
-            // barButtonItem22
+            // BtnGorevDetay
             // 
-            this.barButtonItem22.Caption = "Görev Detayları";
-            this.barButtonItem22.Id = 22;
-            this.barButtonItem22.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.ImageOptions.Image")));
-            this.barButtonItem22.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.ImageOptions.LargeImage")));
-            this.barButtonItem22.Name = "barButtonItem22";
+            this.BtnGorevDetay.Caption = "Görev Detayları";
+            this.BtnGorevDetay.Id = 22;
+            this.BtnGorevDetay.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.ImageOptions.Image")));
+            this.BtnGorevDetay.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.ImageOptions.LargeImage")));
+            this.BtnGorevDetay.Name = "BtnGorevDetay";
+            this.BtnGorevDetay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGorevDetay_ItemClick);
             // 
             // barButtonItem23
             // 
@@ -474,7 +475,7 @@ namespace is_takip_proje
             // 
             // ribbonPageGroup10
             // 
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem22);
+            this.ribbonPageGroup10.ItemLinks.Add(this.BtnGorevDetay);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             // 
             // ribbonPage6
@@ -558,7 +559,7 @@ namespace is_takip_proje
         private DevExpress.XtraBars.BarButtonItem barButtonItem19;
         private DevExpress.XtraBars.BarButtonItem barButtonItem20;
         private DevExpress.XtraBars.BarButtonItem barButtonItem21;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem22;
+        private DevExpress.XtraBars.BarButtonItem BtnGorevDetay;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;

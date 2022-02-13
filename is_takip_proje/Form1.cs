@@ -38,9 +38,12 @@ namespace is_takip_proje
             frm3.Show();
         }
 
+        Formlar.FrmGorevListesi frm4;
         private void BtnGorevListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Formlar.FrmGorevListesi frm4 = new Formlar.FrmGorevListesi();
+            // aşağıdaki if koşulu sayesinde bir form çok kere kapatılmaz ve isDisposed ise kapanan formu tekrar açmasını sağlamaktadır.
+            if (frm4 == null || frm4.IsDisposed)
+            frm4 = new Formlar.FrmGorevListesi();
             frm4.MdiParent = this;
             frm4.Show();
         }
@@ -48,6 +51,12 @@ namespace is_takip_proje
         private void BtnGorevTanimi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.FrmGorev fr = new Formlar.FrmGorev();
+            fr.Show();
+        }
+
+        private void BtnGorevDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGorevDetay fr = new Formlar.FrmGorevDetay();
             fr.Show();
         }
     }

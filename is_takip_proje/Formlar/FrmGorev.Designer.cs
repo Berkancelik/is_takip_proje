@@ -41,13 +41,13 @@ namespace is_takip_proje.Formlar
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtGorevVeren = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.MemoEdit();
-            this.BtnEkle = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit3 = new DevExpress.XtraEditors.DateEdit();
+            this.TxtAciklama = new DevExpress.XtraEditors.MemoEdit();
+            this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtTarih = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
@@ -56,11 +56,11 @@ namespace is_takip_proje.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtGorevVeren.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTarih.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTarih.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -75,11 +75,11 @@ namespace is_takip_proje.Formlar
             this.panelControl1.Controls.Add(this.labelControl2);
             this.panelControl1.Controls.Add(this.pictureEdit2);
             this.panelControl1.Controls.Add(this.lookUpEdit1);
-            this.panelControl1.Controls.Add(this.textEdit1);
+            this.panelControl1.Controls.Add(this.TxtGorevVeren);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.pictureEdit1);
-            this.panelControl1.Controls.Add(this.textEdit2);
-            this.panelControl1.Controls.Add(this.textEdit3);
+            this.panelControl1.Controls.Add(this.TxtAciklama);
+            this.panelControl1.Controls.Add(this.TxtTarih);
             this.panelControl1.Location = new System.Drawing.Point(12, 12);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(708, 578);
@@ -191,12 +191,12 @@ namespace is_takip_proje.Formlar
             this.lookUpEdit1.Size = new System.Drawing.Size(322, 22);
             this.lookUpEdit1.TabIndex = 18;
             // 
-            // textEdit1
+            // TxtGorevVeren
             // 
-            this.textEdit1.Location = new System.Drawing.Point(307, 74);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(322, 22);
-            this.textEdit1.TabIndex = 17;
+            this.TxtGorevVeren.Location = new System.Drawing.Point(307, 74);
+            this.TxtGorevVeren.Name = "TxtGorevVeren";
+            this.TxtGorevVeren.Size = new System.Drawing.Size(322, 22);
+            this.TxtGorevVeren.TabIndex = 17;
             // 
             // labelControl1
             // 
@@ -220,58 +220,60 @@ namespace is_takip_proje.Formlar
             this.pictureEdit1.Size = new System.Drawing.Size(43, 44);
             this.pictureEdit1.TabIndex = 15;
             // 
-            // textEdit2
+            // TxtAciklama
             // 
-            this.textEdit2.Location = new System.Drawing.Point(307, 332);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(322, 197);
-            this.textEdit2.TabIndex = 21;
+            this.TxtAciklama.Location = new System.Drawing.Point(307, 332);
+            this.TxtAciklama.Name = "TxtAciklama";
+            this.TxtAciklama.Size = new System.Drawing.Size(322, 197);
+            this.TxtAciklama.TabIndex = 21;
             // 
-            // BtnEkle
+            // BtnVazgec
             // 
-            this.BtnEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnEkle.ImageOptions.Image")));
-            this.BtnEkle.Location = new System.Drawing.Point(319, 630);
-            this.BtnEkle.Name = "BtnEkle";
-            this.BtnEkle.Size = new System.Drawing.Size(186, 32);
-            this.BtnEkle.TabIndex = 30;
-            this.BtnEkle.Text = "Vazgeç";
+            this.BtnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnEkle.ImageOptions.Image")));
+            this.BtnVazgec.Location = new System.Drawing.Point(319, 630);
+            this.BtnVazgec.Name = "BtnVazgec";
+            this.BtnVazgec.Size = new System.Drawing.Size(186, 32);
+            this.BtnVazgec.TabIndex = 30;
+            this.BtnVazgec.Text = "Vazgeç";
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
-            // simpleButton1
+            // BtnKaydet
             // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(534, 630);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(186, 32);
-            this.simpleButton1.TabIndex = 31;
-            this.simpleButton1.Text = "Kaydet";
+            this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnKaydet.Location = new System.Drawing.Point(534, 630);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(186, 32);
+            this.BtnKaydet.TabIndex = 31;
+            this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
-            // textEdit3
+            // TxtTarih
             // 
-            this.textEdit3.EditValue = null;
-            this.textEdit3.Location = new System.Drawing.Point(307, 190);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.TxtTarih.EditValue = null;
+            this.TxtTarih.Location = new System.Drawing.Point(307, 190);
+            this.TxtTarih.Name = "TxtTarih";
+            this.TxtTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.TxtTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit3.Properties.DisplayFormat.FormatString = "";
-            this.textEdit3.Properties.EditFormat.FormatString = "";
-            this.textEdit3.Properties.Mask.EditMask = "";
-            this.textEdit3.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.textEdit3.Size = new System.Drawing.Size(322, 22);
-            this.textEdit3.TabIndex = 30;
+            this.TxtTarih.Properties.DisplayFormat.FormatString = "";
+            this.TxtTarih.Properties.EditFormat.FormatString = "";
+            this.TxtTarih.Properties.MaskSettings.Set("mask", "");
+            this.TxtTarih.Size = new System.Drawing.Size(322, 22);
+            this.TxtTarih.TabIndex = 30;
             // 
             // FrmGorev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 703);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.BtnEkle);
+            this.Controls.Add(this.BtnKaydet);
+            this.Controls.Add(this.BtnVazgec);
             this.Controls.Add(this.panelControl1);
             this.Name = "FrmGorev";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Görev Tanımlama Kartı";
+            this.Load += new System.EventHandler(this.FrmGorev_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
@@ -281,11 +283,11 @@ namespace is_takip_proje.Formlar
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtGorevVeren.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTarih.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTarih.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,12 +305,12 @@ namespace is_takip_proje.Formlar
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtGorevVeren;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.MemoEdit textEdit2;
-        private DevExpress.XtraEditors.SimpleButton BtnEkle;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.DateEdit textEdit3;
+        private DevExpress.XtraEditors.MemoEdit TxtAciklama;
+        private DevExpress.XtraEditors.SimpleButton BtnVazgec;
+        private DevExpress.XtraEditors.SimpleButton BtnKaydet;
+        private DevExpress.XtraEditors.DateEdit TxtTarih;
     }
 }
