@@ -23,8 +23,8 @@ namespace is_takip_proje.Formlar
             LblToplamDepartman.Text = db.TblDepartmanlars.Count().ToString();
             LblToplamFirma.Text = db.TblFirmalars.Count().ToString();
             LblToplamPersonel.Text = db.TblPersonels.Count().ToString();
-            LblAktifIs.Text = db.TblGorevlers.Count(x => x.Durum == "1").ToString();
-            LblPasifIs.Text = db.TblGorevlers.Count(x => x.Durum == "0").ToString();
+            LblAktifIs.Text = db.TblGorevlers.Count(x => x.Durum == true).ToString();
+            LblPasifIs.Text = db.TblGorevlers.Count(x => x.Durum == false).ToString();
             LblSonGorev.Text = db.TblGorevlers.OrderByDescending(x =>x.ID).Select(x => x.Aciklama).FirstOrDefault();
             LblSonGorevTarihi.Text = db.TblGorevlers.OrderByDescending(x => x.ID).Select(x => x.Tarih).FirstOrDefault().ToString();
 

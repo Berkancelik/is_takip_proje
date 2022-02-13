@@ -25,7 +25,15 @@ namespace is_takip_proje.Formlar
                                        {                                          
                                            x.Aciklama
                                        }).ToList();
-           
+            chartControl1.Series["Series 1"].Points.AddPoint("İnsan Kaynakları", 26);
+            chartControl1.Series["Series 1"].Points.AddPoint("Yazılım", 34);
+            chartControl1.Series["Series 1"].Points.AddPoint("Muhasebe", 18);
+            chartControl1.Series["Series 1"].Points.AddPoint("Mutfak", 16);
+            chartControl1.Series["Series 1"].Points.AddPoint("Temizlik", 21);
+            chartControl1.Series["Series 1"].Points.AddPoint("Staj", 19);
+
+
+
 
         }
     }
