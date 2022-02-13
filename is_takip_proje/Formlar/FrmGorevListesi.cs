@@ -20,17 +20,21 @@ namespace is_takip_proje.Formlar
         DbisTakipEntities db = new DbisTakipEntities();
         private void FrmGorevListesi_Load(object sender, EventArgs e)
         {
-            gridControl1.DataSource = (from x in db.TblGorevlers
+            gridControl2.DataSource = (from x in db.TblGorevlers
                                        select new
                                        {                                          
                                            x.Aciklama
                                        }).ToList();
-            chartControl1.Series["Series 1"].Points.AddPoint("İnsan Kaynakları", 26);
-            chartControl1.Series["Series 1"].Points.AddPoint("Yazılım", 34);
-            chartControl1.Series["Series 1"].Points.AddPoint("Muhasebe", 18);
-            chartControl1.Series["Series 1"].Points.AddPoint("Mutfak", 16);
-            chartControl1.Series["Series 1"].Points.AddPoint("Temizlik", 21);
-            chartControl1.Series["Series 1"].Points.AddPoint("Staj", 19);
+
+
+            LblAktigGorev.Text = db.TblGorevlers.Where(x => x.Durum == true).Count().ToString();
+            LblPasifGorev.Text = db.TblGorevlers.Where(x => x.Durum == false).Count().ToString();
+            LblToplamDepartman2.Text = db.TblDepartmanlars.Count().ToString();
+
+
+            chartControl1.Series["Durum"].Points.AddPoint("Aktif Görevler", int.Parse(LblAktigGorev.Text));
+            chartControl1.Series["Durum"].Points.AddPoint("Pasif Görevler", int.Parse(LblPasifGorev.Text));
+
 
 
 

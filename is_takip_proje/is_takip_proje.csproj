@@ -114,6 +114,12 @@
     <Compile Include="Formlar\FrmDepartmanlar.Designer.cs">
       <DependentUpon>FrmDepartmanlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmGorev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmGorev.Designer.cs">
+      <DependentUpon>FrmGorev.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmGorevListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmDepartmanlar.resx">
       <DependentUpon>FrmDepartmanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmGorev.resx">
+      <DependentUpon>FrmGorev.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmGorevListesi.resx">
       <DependentUpon>FrmGorevListesi.cs</DependentUpon>

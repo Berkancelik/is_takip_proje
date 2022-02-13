@@ -49,7 +49,7 @@ namespace is_takip_proje
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnGorevListesi = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnGorevTanimi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
@@ -111,7 +111,7 @@ namespace is_takip_proje
             this.barButtonItem15,
             this.barButtonItem16,
             this.BtnGorevListesi,
-            this.barButtonItem18,
+            this.BtnGorevTanimi,
             this.barButtonItem19,
             this.barButtonItem20,
             this.barButtonItem21,
@@ -263,18 +263,19 @@ namespace is_takip_proje
             // 
             this.BtnGorevListesi.Caption = "Gorev Listesi";
             this.BtnGorevListesi.Id = 17;
-            this.BtnGorevListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.Image")));
-            this.BtnGorevListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.LargeImage")));
+            this.BtnGorevListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGorevListesi.ImageOptions.Image")));
+            this.BtnGorevListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGorevListesi.ImageOptions.LargeImage")));
             this.BtnGorevListesi.Name = "BtnGorevListesi";
             this.BtnGorevListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGorevListesi_ItemClick);
             // 
-            // barButtonItem18
+            // BtnGorevTanimi
             // 
-            this.barButtonItem18.Caption = "Yeni Görev Tanımla";
-            this.barButtonItem18.Id = 18;
-            this.barButtonItem18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.Image")));
-            this.barButtonItem18.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.LargeImage")));
-            this.barButtonItem18.Name = "barButtonItem18";
+            this.BtnGorevTanimi.Caption = "Yeni Görev Tanımla";
+            this.BtnGorevTanimi.Id = 18;
+            this.BtnGorevTanimi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.Image")));
+            this.BtnGorevTanimi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.LargeImage")));
+            this.BtnGorevTanimi.Name = "BtnGorevTanimi";
+            this.BtnGorevTanimi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGorevTanimi_ItemClick);
             // 
             // barButtonItem19
             // 
@@ -461,7 +462,7 @@ namespace is_takip_proje
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.ItemLinks.Add(this.BtnGorevListesi);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem18);
+            this.ribbonPageGroup8.ItemLinks.Add(this.BtnGorevTanimi);
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem19);
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem20);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
@@ -553,7 +554,7 @@ namespace is_takip_proje
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
         private DevExpress.XtraBars.BarButtonItem BtnGorevListesi;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem18;
+        private DevExpress.XtraBars.BarButtonItem BtnGorevTanimi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem19;
         private DevExpress.XtraBars.BarButtonItem barButtonItem20;
         private DevExpress.XtraBars.BarButtonItem barButtonItem21;

@@ -44,5 +44,11 @@ namespace is_takip_proje
             frm4.MdiParent = this;
             frm4.Show();
         }
+
+        private void BtnGorevTanimi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.FrmGorev fr = new Formlar.FrmGorev();
+            fr.Show();
+        }
     }
 }
