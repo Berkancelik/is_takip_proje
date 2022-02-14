@@ -32,7 +32,7 @@ namespace is_takip_proje
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnAnaForm = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
@@ -94,7 +94,7 @@ namespace is_takip_proje
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
-            this.barButtonItem1,
+            this.BtnAnaForm,
             this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem4,
@@ -138,13 +138,14 @@ namespace is_takip_proje
             this.ribbonPage7});
             this.ribbonControl1.Size = new System.Drawing.Size(1856, 183);
             // 
-            // barButtonItem1
+            // BtnAnaForm
             // 
-            this.barButtonItem1.Caption = "Ana Sayfa";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.BtnAnaForm.Caption = "Ana Sayfa";
+            this.BtnAnaForm.Id = 1;
+            this.BtnAnaForm.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.BtnAnaForm.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.BtnAnaForm.Name = "BtnAnaForm";
+            this.BtnAnaForm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAnaForm_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -305,8 +306,8 @@ namespace is_takip_proje
             // 
             this.BtnGorevDetay.Caption = "Görev Detayları";
             this.BtnGorevDetay.Id = 22;
-            this.BtnGorevDetay.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.ImageOptions.Image")));
-            this.BtnGorevDetay.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.ImageOptions.LargeImage")));
+            this.BtnGorevDetay.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGorevDetay.ImageOptions.Image")));
+            this.BtnGorevDetay.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGorevDetay.ImageOptions.LargeImage")));
             this.BtnGorevDetay.Name = "BtnGorevDetay";
             this.BtnGorevDetay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGorevDetay_ItemClick);
             // 
@@ -389,7 +390,7 @@ namespace is_takip_proje
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnAnaForm);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
             // ribbonPage2
@@ -538,7 +539,7 @@ namespace is_takip_proje
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem BtnAnaForm;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;

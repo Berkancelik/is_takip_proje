@@ -59,5 +59,14 @@ namespace is_takip_proje
             Formlar.FrmGorevDetay fr = new Formlar.FrmGorevDetay();
             fr.Show();
         }
+
+        Formlar.FrmAnaForm frm5;
+        private void BtnAnaForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frm5 == null || frm5.IsDisposed)
+                frm5 = new Formlar.FrmAnaForm();
+            frm5.MdiParent = this;
+            frm5.Show();
+        }
     }
 }
